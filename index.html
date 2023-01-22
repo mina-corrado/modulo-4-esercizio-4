@@ -1,0 +1,383 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Negozi di Libri Epico</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/album/album.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Negozio di Libri Epico, dove si vendono sogni.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+          </svg>        <strong>Shop</strong>
+      </a>
+      <div>
+          <button class="navbar-toggler mr-1 cart-button" type="button" data-toggle="collapse" data-target="#navbarCart" aria-controls="navbarCart" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <span class="badge">0</span>
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      </div>
+    </div>
+
+  </div>
+  <div class="collapse bg-white" id="navbarCart">
+      <div class="container">
+          <div class="shopping-cart">
+            <ul class="shopping-cart-items list-group">
+                <!--
+
+                    <li class="clearfix list-group-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+                        <span class="item-name">Sony DSC-RX100M III</span>
+                        <span class="item-price">$849.99</span>
+                        <span class="item-quantity">Quantity: 01</span>
+                    </li>
+                    
+                    <li class="clearfix list-group-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+                        <span class="item-name">KS Automatic Mechanic...</span>
+                        <span class="item-price">$1,249.99</span>
+                        <span class="item-quantity">Quantity: 01</span>
+                    </li>
+                    
+                    <li class="clearfix list-group-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
+                        <span class="item-name">Kindle, 6" Glare-Free To...</span>
+                        <span class="item-price">$129.99</span>
+                        <span class="item-quantity">Quantity: 01</span>
+                    </li>
+                -->
+            </ul>
+            <h3>Book Quantity: <span id="cartqty">0</span></h3>
+            <a href="#" class="btn btn-primary">Checkout</a>
+          </div> <!--end shopping-cart -->
+      </div>
+  </div>
+</header>
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Negozio di Libri Epico</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <!-- 
+      <p>
+        <a href="#" class="btn btn-primary my-2" onclick="loadImages();">Load Images</a>
+        <a href="#" class="btn btn-secondary my-2" onclick="loadSecondaryImages();">Load Secondary Images</a>
+      </p> 
+      -->
+      <div class="input-group justify-content-center">
+        <div class="form-outline">
+          <input type="search" id="searchInput" class="form-control" placeholder="search..."/>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="search()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row" id="bookRow">
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Shop &copy; Mina 2023</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script>
+
+    allBooks = [];
+    allCart = [];
+    const topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    const createCard = (book) => {
+        /*
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" 
+            width="100%" 
+            height="225" xmlns="http://www.w3.org/2000/svg" 
+            preserveAspectRatio="xMidYMid slice" 
+            focusable="false" role="img" 
+            aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        */
+       const divWrap = document.createElement("div");
+       divWrap.className="col-sm-6 col-md-6 col-lg-4";
+       divWrap.id=book.asin;
+
+       const card = document.createElement("div");
+       card.className="card mb-4 shadow-sm";
+
+       const img = document.createElement("img");
+       img.className="card-img-top w-100";
+       img.src = book.img;
+       img.alt = img.alt;
+       img.width = "100%";
+       img.height = "500";
+
+       const cardBody = document.createElement("div");
+       cardBody.className="card-body";
+
+       const p = document.createElement("p");
+       p.className = "card-text";
+       p.textContent = book.title + " - " + book.category;
+
+       const wrapButton = document.createElement("div");
+       wrapButton.className = "d-flex justify-content-between align-items-center";
+
+       const groupButton = document.createElement("div");
+       groupButton.className = "btn-group";
+       const button1 = document.createElement("button");
+       button1.className="btn btn-sm btn-outline-secondary";
+       button1.type="button";
+       button1.textContent="Aggiungi al carrello";
+       button1.addEventListener('click', function(event) {
+            // carrello
+            const cart = document.querySelectorAll('.shopping-cart-items')[0];
+            const item = creaItemCart(book);
+            cart.appendChild(item);
+            allCart.push(book);
+
+            //colore
+            const wrap = document.getElementById(book.asin);
+            wrap.style.border = "4px solid green";
+
+            //aggiorna badge
+            const count = allCart.reduce(function (previousValue, currentValue) {
+                return previousValue + 1;
+            }, 0);
+            const badge = document.querySelectorAll('.badge')[0];
+            badge.textContent=count;
+            
+            //aggiorna totale nel carrello
+            const cartqty = document.getElementById("cartqty");
+            cartqty.textContent=count;
+
+            // mostra carrello
+            const cartButton = document.querySelectorAll('.cart-button')[0];
+            if (cartButton.ariaExpanded==='false'){
+                cartButton.click();
+            }
+            topFunction();
+
+       });
+       const button2 = document.createElement("button");
+       button2.className="btn btn-sm btn-outline-secondary";
+       button2.type="button";
+       button2.textContent="Nascondi";
+       button2.addEventListener('click', function(event) {
+            const wrap = document.getElementById(book.asin);
+            wrap.style.display = "none";
+       });
+       const small = document.createElement("small");
+       small.className="text-muted";
+       small.textContent=book.asin;
+       groupButton.appendChild(button1);
+       groupButton.appendChild(button2);
+       
+       wrapButton.appendChild(groupButton);
+       wrapButton.appendChild(small);
+
+       cardBody.appendChild(p);
+       cardBody.appendChild(wrapButton);
+
+       card.appendChild(img);
+       card.appendChild(cardBody);
+
+       divWrap.appendChild(card);
+
+       return divWrap;
+    }
+    const executeQuery = (url, value) => {
+        fetch(`${url}${value ? '?query='+value : ''}`)
+        .then((response) => response.json())
+        .then((data) => {
+            // console.log(data);
+            const bookWrapper = document.querySelector('#bookRow');
+            for (const book of data) {
+                const card = createCard(book);
+                bookWrapper.appendChild(card);
+                allBooks.push(book);
+            }
+        });
+    }
+
+    const creaItemCart = (book) => {
+        // <li class="clearfix list-group-item">
+        //         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+        //         <span class="item-name">Sony DSC-RX100M III</span>
+        //         <span class="item-price">$849.99</span>
+        //         <span class="item-quantity">Quantity: 01</span>
+        //       </li>
+        const li = document.createElement("li");
+        li.className="clearfix list-group-item";
+        li.id=`cart-${book.asin}`;
+
+        const img = document.createElement("img");
+        img.src=book.img;
+        img.width=70;
+
+        const spanTitle = document.createElement("span");
+        spanTitle.className="item-name";
+        spanTitle.textContent=book.title;
+        const spanPrice = document.createElement("span");
+        spanPrice.className="item-price";
+        spanPrice.textContent=`€ ${book.price}`
+        const spanQty = document.createElement("span");
+        spanQty.className="item-quantity";
+        spanQty.textContent="Quantity: 01";
+
+        const buttonRemove = document.createElement("button");
+        buttonRemove.className="item-remove btn btn-secondary";
+        buttonRemove.textContent="Remove";
+        buttonRemove.addEventListener('click', function(event) {
+            allCart = allCart.filter((item)=> item.asin!=book.asin);
+
+            //aggiorna badge
+            const count = allCart.reduce(function (previousValue, currentValue) {
+                return previousValue + 1;
+            }, 0);
+            const badge = document.querySelectorAll('.badge')[0];
+            badge.textContent=count;
+            
+            //aggiorna totale nel carrello
+            const cartqty = document.getElementById("cartqty");
+            cartqty.textContent=count;
+            
+            // colore
+            const wrap = document.getElementById(book.asin);
+            wrap.style.border = "";
+
+            // rimuove
+            const li = document.getElementById(`cart-${book.asin}`);
+            li.remove();
+       });
+        const wrapBtn = document.createElement("div");
+        wrapBtn.appendChild(buttonRemove);
+
+        li.appendChild(img);
+        li.appendChild(spanTitle);
+        li.appendChild(spanPrice);
+        li.appendChild(spanQty);
+        li.appendChild(wrapBtn);
+        
+        return li;
+    }
+
+    const filter = (wordT) => {
+        return function(element) {
+            return element.title.toLowerCase().includes(wordT.toLowerCase());
+        }
+    }
+
+    const search = () => {
+        const input = document.querySelector('#searchInput');
+        const value = input.value;
+        const bookWrapper = document.querySelector('#bookRow');
+        
+        let data = allBooks;
+        if (value && value.length > 2){
+            data = allBooks.filter(filter(value));
+        }
+        bookWrapper.innerHTML = "";
+        for (const book of data) {
+            const card = createCard(book);
+            bookWrapper.appendChild(card);
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        executeQuery("https://striveschool-api.herokuapp.com/books", "");
+        const input = document.getElementById('searchInput');
+        input.addEventListener("search", function(event) {
+            search(); 
+        });
+    });
+    
+</script>
+
+</body>
+</html>
